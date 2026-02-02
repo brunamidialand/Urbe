@@ -95,3 +95,13 @@ Hidraulica,NBR 8160,Esgoto: Vedada a instalacao de caixas de gordura dentro de c
 Hidraulica,NBR 5626,Agua Fria: Reservatorios de agua potavel devem ser estanques e permitir limpeza total. Vedado uso de amianto ou materiais toxicos.,Item 5.1,https://bit.ly/norma-agua-fria
 Eletrica,NBR 5419,SPDA: Edificios acima de 12m ou com grande afluencia de publico exigem sistema de para-raios com inspeção anual.,Parte 3,https://bit.ly/norma-spda
 Ar Condicionado,Lei 13.589/18,PMOC: Edificios com carga acima de 60.000 BTU devem ter plano de manutencao para garantir qualidade do ar e limpeza de filtros.,Artigo 1,https://bit.ly/lei-pmoc
+Categoria,Artigo,Descricao,Fonte,Link
+Pavimentacao,NBR 15953,Piso Intertravado: Pavimentos de concreto devem ter espessura minima de 60mm para trafego leve e 80mm para trafego pesado sobre base compactada.,Item 5.1,https://bit.ly/norma-pavimento
+Pavimentacao,NBR 16475,Piso Drenante: Deve garantir permeabilidade minima de 2mm por segundo para ser contabilizado na Taxa de Permeabilidade do lote.,Item 4.2,https://bit.ly/norma-pavimento
+Conforto,NBR 15220,Termica: Edificios em Curitiba devem possuir isolamento em coberturas para evitar ganho de calor no verao e perda excessiva no inverno.,Parte 3,https://bit.ly/norma-termica
+Conforto,NBR 8995-1,Iluminacao: Ambientes de industria pesada exigem 500 lux; áreas de circulação interna 100 lux; escadas de emergencia 150 lux.,Tabela 1,https://bit.ly/norma-iluminacao
+Sinalizacao,Lei 11.095/04,Numeracao Predial: A placa numerica deve ser instalada em local visivel a partir da via publica em altura entre 1.50m e 2.50m.,Artigo 55,https://bit.ly/375966-lei-curitiba
+Posturas,Lei 11.095/04,Limpeza de Lotes: Terrenos baldios devem ser mantidos limpos e roçados. Vedada a queima de residuos de qualquer natureza sob pena de multa.,Artigo 42,https://bit.ly/375966-lei-curitiba
+Posturas,Lei 11.095/04,Calcadas e Vegetacao: Arvores e arbustos em lotes privados nao podem avancar sobre a calcada prejudicando a livre circulacao de pedestres.,Artigo 38,https://bit.ly/375966-lei-curitiba
+Instalacoes,NBR 10844,Drenagem Telhado: Calhas e condutores verticais devem ser dimensionados para periodo de retorno de 5 anos considerando a pluviosidade de Curitiba.,Item 5.1,https://bit.ly/norma-calhas
+Estruturas,NBR 9062,Pre-moldados: Elementos estruturais pre-fabricados devem ter selo de rastreabilidade e ensaio de compressao (Fck) documentado em
