@@ -69,3 +69,20 @@ Eletrica,Decreto 976/24,"Compartimentacao de Paineis: O interior de cubos de LED
 Seguranca,Lei 11.095/04,"Circulacao em Manutencao: Corredores internos de instalacoes tecnicas nao podem ser usados como deposito e devem ter iluminacao blindada contra impactos.",Artigo 95,https://bit.ly/375966-lei-curitiba
 Vizinhanca,Lei 10.625/02,"Ruido de Maquinas: Os exaustores e sistemas de resfriamento de paineis de LED nao podem ultrapassar 45dB no periodo noturno em zonas residenciais.",Artigo 4,https://bit.ly/lei-10625-curitiba
 Arquitetura,Lei 15.511/19,"Projecao sobre Recuo: Cubos e elementos decorativos so podem avancar sobre o recuo frontal se forem removiveis ou tiverem carater publicitario aprovado.",Artigo 62,https://bit.ly/lei-15511-curitiba
+Categoria,Artigo,Descricao,Fonte,Link
+Painéis LED,Decreto 976/24,Luminância: Intensidade luminosa máxima de 5.000 nits durante o dia e redução obrigatória para 500 nits à noite.,Artigo 30,https://bit.ly/dec-976-curitiba
+Painéis LED,Decreto 976/24,Tempo de Exposição: Cada mensagem publicitária deve permanecer estática por no mínimo 8 segundos sem efeitos de transição brusca.,Artigo 15,https://bit.ly/dec-976-curitiba
+Painéis LED,Decreto 976/24,Área de Fachada: O engenho não pode ultrapassar 30% da área total da fachada onde estiver instalado.,Artigo 12,https://bit.ly/dec-976-curitiba
+Estruturas,Decreto 976/24,Manutenção Interna: Estruturas tridimensionais (cubos) devem garantir espaço livre interno para circulação de técnico de no mínimo 0.60m.,Artigo 32,https://bit.ly/dec-976-curitiba
+Estruturas,Lei 11.095/04,Sobrecarga e Vento: Cálculos estruturais devem prever pressão dinâmica do vento conforme a NBR 6123 para evitar queda de painéis.,Artigo 45,https://bit.ly/375966-lei-curitiba
+Acessibilidade,NBR 9050,Sinalização Tátil: Obrigatório piso tátil de alerta em mudanças de direção e no início/fim de rampas e escadas.,Item 5.4.6,https://bit.ly/nbr9050-completa
+Acessibilidade,NBR 9050,Largura de Corredores: Corredores de uso público devem ter largura mínima de 1.50m para permitir manobra de cadeiras de rodas.,Item 6.10,https://bit.ly/nbr9050-completa
+Acessibilidade,NBR 9050,Maçanetas e Controles: Devem ser do tipo alavanca instalados entre 0.80m e 1.10m de altura para fácil alcance.,Item 4.6,https://bit.ly/nbr9050-completa
+Incêndio,CSC-01/CBPR,Extintores: Devem ser instalados de modo que a parte superior não fique a mais de 1.60m do piso acabado.,Artigo 12.5,https://www.bombeiros.pr.gov.br/Pagina/Codigos-e-Normas
+Incêndio,CSC-01/CBPR,Sinalização de Emergência: Placas indicativas de rota de fuga devem ser fotoluminescentes e visíveis mesmo com fumaça.,Norma Técnica 20,https://www.bombeiros.pr.gov.br/Pagina/Codigos-e-Normas
+Incêndio,CSC-01/CBPR,Largura de Portas: Portas de saída de emergência devem ter vão livre mínimo de 0.80m para fluxo de até 50 pessoas.,Artigo 5.1,https://www.bombeiros.pr.gov.br/Pagina/Codigos-e-Normas
+Arquitetura,Lei 11.095/04,Pé-direito Técnico: Compartimentos destinados a abrigar equipamentos (casas de máquinas) podem ter pé-direito mínimo de 2.00m.,Artigo 92,https://bit.ly/375966-lei-curitiba
+Arquitetura,Lei 11.095/04,Ventilação de Sanitários: Banheiros podem ser ventilados por dutos ou sistema mecânico (exaustão) com renovação total de ar.,Artigo 88,https://bit.ly/375966-lei-curitiba
+Recuos,Lei 15.511/19,Beirais e Saliências: Beirais de até 1.20m podem avançar sobre o recuo frontal sem serem computados como área construída.,Artigo 68,https://bit.ly/lei-15511-curitiba
+Estacionamento,Lei 15.511/19,Rebaixo de Meio-fio: O rebaixo para entrada de veículos deve guardar distância mínima de 5.00m do início da curva da esquina.,Artigo 72,https://bit.ly/lei-15511-curitiba
+Sanitário,Lei 9.000/96,Revestimentos: Paredes de áreas de manipulação de alimentos devem ser revestidas de material liso resistente e impermeável até 2.00m.,Código Saúde,https://bit.ly/lei-9000-curitiba
