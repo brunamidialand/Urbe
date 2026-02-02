@@ -71,3 +71,16 @@ Trabalho,NR-18,"Canteiro de Obras: Bandejas de proteção (apara-lixo) obrigató
 Trabalho,NR-35,"Trabalho em Altura: Obrigatoriedade de pontos de ancoragem certificados na cobertura para manutenção de fachadas e limpeza de vidros.",Item 35.5,https://bit.ly/nr35-altura
 Trabalho,NR-10,"Seguranca Eletrica: Quadros devem possuir sinalização de advertência e barreira física contra contatos acidentais em partes energizadas.",Item 10.4,https://bit.ly/norma-eletrica-led
 Protecao,NBR 14718,"Guarda-corpos: Altura mínima de 1.10m. Se houver degraus, a altura é medida a partir do focinho. Vidro deve ser laminado ou aramado.",Item 4.1,https://bit.ly/norma-guarda-corpo
+Categoria,Artigo,Descricao,Fonte,Link
+Saude,RDC 50 ANVISA,Hospitais: Corredores para circulacao de macas devem ter largura minima de 2.00m e rodapes arredondados.,Item 3.2,https://bit.ly/anvisa-rdc50
+Saude,RDC 50 ANVISA,Fluxos: Obrigatoria a separacao fisica entre o fluxo de material limpo e material sujo (expurgo) em centros medicos.,Item 3.1,https://bit.ly/anvisa-rdc50
+Saude,RDC 50 ANVISA,Blindagem: Salas de Raios-X e Tomografia exigem projeto de blindagem radiologica e visores plumbiferos nas portas.,Item 3.2,https://bit.ly/anvisa-rdc50
+Saude,Lei 9.000/96,Clinicas: Consultorios devem possuir lavatorio exclusivo para higiene de maos com acionamento nao manual.,Codigo Saude,https://bit.ly/lei-9000-curitiba
+Educacao,Lei 14.771/15,Escolas: Exigencia de area de recreacao descoberta minima de 5.00m2 por aluno devidamente cercada e segura.,Artigo 90,https://bit.ly/plano-diretor-curitiba
+Educacao,NBR 14050,Escolas: Salas de aula devem ter ventilacao natural cruzada ou sistema mecanico que garanta renovacao do ar constante.,Item 5.2,https://bit.ly/norma-escolas
+Postos,CONAMA 273,Tanques: Devem ser de parede dupla (jaquetados) com sensor de monitoramento de vazamento no espaco intersticial.,Artigo 5,https://bit.ly/conama-273
+Postos,CONAMA 273,Piso: Area de abastecimento deve ser impermeavel com canaletas de contencao conectadas a caixa separadora de oleo (SAO).,Artigo 5,https://bit.ly/conama-273
+Postos,Lei 11.095/04,Distancias: Bombas de combustivel devem manter recuo minimo de 6.00m do alinhamento predial e 3.00m das divisas.,Artigo 140,https://bit.ly/375966-lei-curitiba
+Ambiental,Lei 15.511/19,APP: Imoveis proximos a rios ou corregos (mesmo canalizados) devem respeitar faixa nao edificavel de 15m a 30m.,Artigo 105,https://bit.ly/plano-diretor-curitiba
+Ambiental,Decreto 1910/17,PGRCC: Projetos com demolicao ou construcao acima de 600m2 exigem Plano de Gerenciamento de Residuos da Construcao Civil.,Artigo 5,https://bit.ly/dec-1910-curitiba
+Infraestrutura,NBR 13523,Gas: Central de GLP deve estar a no
