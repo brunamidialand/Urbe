@@ -93,3 +93,9 @@ Meio Ambiente,Lei 15.511/19,Arvores Isoladas: E proibido construir a menos de 2 
 Vizinhanca,Codigo Civil,Distancia de Janelas: E proibido abrir janelas ou terraços a menos de 1.50m da divisa lateral ou de fundos do vizinho.,Artigo 1.299,https://bit.ly/codigo-civil-br
 Vizinhanca,Codigo Civil,Aguas Pluviais: O telhado nao pode despejar agua diretamente no terreno vizinho; calhas e condutores sao obrigatorios.,Artigo 1.300,https://bit.ly/codigo-civil-br
 Vizinhanca,Lei 10.625/02,Emissao de Ruidos: Em zonas residenciais o limite de barulho de equipamentos externos e de 55dB (dia) e 45dB (noite).,Artigo 4,https://bit.ly/lei-10625-curitiba
+Categoria,Artigo,Descricao,Fonte,Link
+Eletrica,NBR 5410,Quadros de Energia: Devem ser instalados em locais de facil acesso com sinalizacao de perigo e sem obstrucao por moveis.,Item 6.1,https://bit.ly/norma-eletrica-led
+Eletrica,NBR 5410,Aterramento de Estruturas: Estruturas metalicas de grande porte devem ter conexao equipotencial para evitar choques em falhas.,Item 6.3,https://bit.ly/norma-eletrica-led
+Hidraulica,Lei 11.095/04,Reservatorio de Agua: Edificios com mais de 2 pavimentos devem possuir reservatorios superior e inferior com sistema de recalque.,Artigo 100,https://bit.ly/375966-lei-curitiba
+Seguranca,Lei 11.095/04,Para-raios: Obrigatorio para edificios com mais de 750m2 ou estruturas metalicas que se destaquem na paisagem urbana.,Artigo 102,https://bit.ly/375966-lei-curitiba
+Infraestrutura,Decreto 1066/06,Caixa de Retencao: Projetos com area impermeabilizada acima de 500m2 exigem caixa de retencao de cheias (piscininha).,Artigo 23,https://bit.ly/dec-1066-curitiba
