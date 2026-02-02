@@ -1,20 +1,20 @@
 Categoria,Artigo,Descricao,Fonte,Link
-Acessibilidade,NBR 9050,Rampas: Inclinacao maxima de 8.33%. Largura minima de 1.20m com patamares de descanso a cada 50m de percurso.,Item 6.6,https://bit.ly/nbr9050-completa
-Acessibilidade,NBR 9050,Sanitarios PCD: Giro livre de 1.50m. Barra de apoio horizontal a 0.75m do piso. Bacia com altura entre 0.43m e 0.45m.,Item 7.5,https://bit.ly/nbr9050-completa
-Acessibilidade,NBR 9050,Sinalizacao Tatil: Piso de alerta em rebaixos de calcada e piso direcional em espacos amplos sem guias de balizamento.,Item 5.4,https://bit.ly/nbr9050-completa
-Urbanismo,Lei 15.511/19,ZR4 Altura Maxima: Em Zonas Residenciais 4 a altura livre e de ate 6 pavimentos para uso habitacional.,Artigo 62,https://bit.ly/lei-15511-curitiba
-Urbanismo,Lei 15.511/19,Recuo Frontal: Minimo de 5.00m. Vedada qualquer construcao inclusive publicidade abaixo de 3.00m de altura nesta faixa.,Artigo 62,https://bit.ly/lei-15511-curitiba
-Urbanismo,Lei 15.511/19,Taxa de Ocupacao: Geralmente 50% do lote. Define a projeção maxima da edificacao sobre o terreno.,Artigo 58,https://bit.ly/lei-15511-curitiba
-Estruturas,Lei 11.095/04,Calculo Estrutural: Obrigatorio para qualquer estrutura metalica ou de concreto que suporte carga superior a 100kg/m2.,Artigo 45,https://bit.ly/375966-lei-curitiba
-Estruturas,Lei 11.095/04,Andaimas e Protecao: Obras no alinhamento predial devem ter galeria de protecao para pedestres com pe-direito de 2.50m.,Artigo 38,https://bit.ly/375966-lei-curitiba
-Incendio,CSC-01/CBPR,Saidas de Emergencia: Portas de locais de reuniao de publico devem abrir sempre no sentido da fuga (para fora).,Artigo 5.1,https://bit.ly/bombeiros-pr
-Incendio,CSC-01/CBPR,Hidrantes: Exigidos em edificacoes acima de 750m2. O recalque deve estar na calcada com tampa metalica identificada.,Norma Tecnica 11,https://bit.ly/bombeiros-pr
-Incendio,CSC-01/CBPR,Compartimentacao: Paredes corta-fogo entre lojas em shoppings ou centros comerciais devem resistir por 120 minutos.,Norma Tecnica 08,https://bit.ly/bombeiros-pr
-Saude,Lei 9.000/96,Cozinhas Industriais: Piso ceramico antiderrapante. Teto lavavel. Ralos sifonados com tampa que impeça entrada de vetores.,Artigo 45,https://bit.ly/lei-9000-curitiba
-Saude,Lei 9.000/96,Vestiarios: Obrigatorios para funcionarios com separacao por sexo e armarios individuais ventilados.,Artigo 52,https://bit.ly/lei-9000-curitiba
-Infraestrutura,Decreto 1066/06,Drenagem: Proibido ligar agua da chuva na rede de esgoto. Exige-se reservatorio de retencao para lotes acima de 500m2.,Artigo 22,https://bit.ly/dec-1066-curitiba
-Infraestrutura,Decreto 2397/23,Calcada Padrao: Faixa de servico para postes e arvores. Faixa livre de 1.50m e Faixa de acesso para vitrines.,Artigo 10,https://bit.ly/dec-2397-curitiba
-Meio Ambiente,Lei 15.511/19,Solo Permeavel: Proibido concretar 100% do lote. Exige-se jardim ou piso drenante em no minimo 25% da area livre.,Artigo 60,https://bit.ly/lei-15511-curitiba
-Eletrica,NBR 5410,Centros de Medicao: Devem estar no limite do lote com o logradouro para leitura da Copel sem entrada no imovel.,Item 6.1,https://bit.ly/norma-eletrica-led
-Eletrica,NBR 5410,Protecao de Cabos: Cabos de paineis de LED externos devem estar em eletrodutos metalicos rigidos aterrados contra vandalismo.,Item 5.2,https://bit.ly/norma-eletrica-led
-Publicidade,Decreto 976/24,Distancia de Esquinas: Paineis de LED devem estar a no minimo 10.00m do cruzamento de vias estruturais.,Artigo 25,https://bit.ly/dec-976-curitiba
+Zoneamento,Lei 15.511/19,"Parametros Construtivos: Coeficiente de Aproveitamento (CA) varia de 1.0 a 4.0 conforme a zona. Taxa de Ocupacao maxima de 50%. Recuo frontal minimo obrigatorio de 5.00m.",Plano Diretor,https://bit.ly/lei-15511-curitiba
+Acessibilidade,NBR 9050,"Geometria de Rampas: Inclinacao maxima de 8.33% (1:12). Largura livre minima de 1.20m. Corrimaos em duas alturas (0.70m e 0.92m) com prolongamento de 0.30m.",Item 6.6,https://bit.ly/nbr9050-completa
+Acessibilidade,NBR 9050,"Sanitarios PCD: Espaco para giro de 1.50m. Area de transferencia lateral a bacia de 0.80m x 1.20m. Barras de apoio horizontais e verticais obrigatorias.",Item 7.5,https://bit.ly/nbr9050-completa
+Incendio,CSC-01/CBPR,"Saidas de Emergencia: Portas devem abrir no sentido do fluxo. Largura de 0.80m para ate 50 pessoas; 1.00m para ate 100 pessoas. Barra antipanico acima de 100 pessoas.",NT 11/23,https://bit.ly/bombeiros-pr
+Incendio,CSC-01/CBPR,"Sinalizacao e Alarme: Placas fotoluminescentes a 2.10m de altura. Botoeiras de alarme a 1.20m do piso. Autonomia de iluminacao de emergencia minima de 60 minutos.",NT 20/23,https://bit.ly/bombeiros-pr
+Estruturas,NBR 6123,"Cargas de Vento: Estruturas metalicas e engenhos de publicidade devem suportar velocidade basica de vento (Vo) de 45m/s (aprox. 160km/h) para a regiao de Curitiba.",Artigo 45,https://bit.ly/375966-lei-curitiba
+Publicidade,Decreto 976/24,"Painéis LED: Luminancia maxima de 5.000 nits (dia) e 500 nits (noite). Proibido uso de cores brancas puras em fundo total a noite para evitar ofuscamento.",Artigo 30,https://bit.ly/dec-976-curitiba
+Publicidade,Decreto 976/24,"Instalacao em Esquinas: Paineis devem respeitar o triangulo de visibilidade de 10.00m em cada cateto a partir do cruzamento dos alinhamentos prediais.",Artigo 25,https://bit.ly/dec-976-curitiba
+Sanitario,Lei 9.000/96,"Vigilancia e Fluxos: Cozinhas industriais devem ter paredes revestidas de material liso e impermeavel ate 2.00m. Pias de lavagem de maos separadas das pias de servico.",Codigo Saude,https://bit.ly/lei-9000-curitiba
+Infraestrutura,Decreto 1066/06,"Drenagem Pluvial: Lotes acima de 500m2 exigem reservatorio de retencao (piscininha) para retardar o fluxo de agua para a galeria publica em dias de chuva.",Artigo 22,https://bit.ly/dec-1066-curitiba
+Eletrica,NBR 5410,"Protecao de Circuitos: Obrigatorio uso de Dispositivo Diferencial Residual (DR) de 30mA para circuitos de tomadas em cozinhas, banheiros e areas externas.",Item 5.1,https://bit.ly/norma-eletrica-led
+Gas,NBR 13523,"Central de Gas GLP: Recipientes devem estar a 1.50m de ralos e canaletas e a 3.00m de fontes de ignicao (motores, quadros eletricos).",Item 5.1,https://bit.ly/norma-gas-glp
+Vizinhanca,Codigo Civil,"Janelas e Divisas: Proibido abrir janelas, terracos ou varandas a menos de 1.50m da divisa lateral. Beirais devem ter calha para nao verter no vizinho.",Artigo 1.299,https://bit.ly/codigo-civil-br
+Conforto,NBR 15575,"Desempenho Acustico: Paredes entre apartamentos devem garantir isolamento minimo de 45dB. Pisos devem ter manta acustica para ruidos de impacto.",Parte 4,https://bit.ly/norma-desempenho-edificios
+Trabalho,NR-18,"Canteiro de Obras: Bandejas de protecao (aparachalicos) obrigatorias no 1o pavimento e a cada 2 pavimentos acima. Linha de vida para trabalhos em altura.",Item 18.10,https://bit.ly/nr18-trabalho
+Hospitais,RDC 50 ANVISA,"Areas Assistenciais: Largura minima de corredores de 2.00m para passagem de macas. Rodapes devem ser hospitalares (arredondados) para evitar acumulo de sujeira.",Item 3.2,https://bit.ly/anvisa-rdc50
+Ambiental,Lei 14.771/15,"Corte de Arvores: Proibida a supressao de Araucaria Angustifolia em lotes urbanos sem laudo de risco iminente ou projeto de utilidade publica aprovado.",Artigo 82,https://bit.ly/plano-diretor-curitiba
+Garagens,Lei 11.095/04,"Circulacao de Veiculos: Rampas de garagem com inclinacao maxima de 20%. Largura de faixa de manobra de 5.50m para vagas em angulo de 90 graus.",Artigo 115,https://bit.ly/375966-lei-curitiba
+Elevadores,NBR 16042,"Acessibilidade em Elevadores: Cabine deve permitir o giro de uma cadeira de rodas (1.10m x 1.40m min). Espelho no painel do fundo e sinalizacao de voz.",Item 5.1,https://bit.ly/norma-elevadores
