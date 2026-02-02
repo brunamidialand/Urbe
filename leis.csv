@@ -58,3 +58,16 @@ Desempenho,NBR 15575,Acustica Piso: Isolamento contra ruidos de impacto entre la
 Desempenho,NBR 15575,Acustica Paredes: Paredes entre dormitorios de unidades distintas devem isolar no minimo 45dB de ruido aereo.,Parte 4,https://bit.ly/norma-desempenho-edificios
 Desempenho,NBR 15575,Termico: Paredes externas devem seguir transmitancia termica maxima para garantir conforto em Curitiba.,Parte 4,https://bit.ly/norma-desempenho-edificios
 Iluminacao,NBR ISO 8995-1,Conforto: Escritorios exigem 500 lux no plano de trabalho. Industrias leves 300 lux. Salas cirurgicas 10.000 lux.,Tabela 1,https://bit.ly/norma-iluminacao
+Categoria,Artigo,Descricao,Fonte,Link
+Publicidade,Decreto 976/24,"Luminancia LED: Limite de 5000 nits durante o dia e redução automática para 500 nits após o pôr do sol via sensor dimmer.",Artigo 30,https://bit.ly/dec-976-curitiba
+Publicidade,Decreto 976/24,"Area de Engenho: Em fachadas, o painel não pode ocupar mais de 30% da área total ou 50m². Em terrenos, o totem deve respeitar o recuo de 5m.",Artigo 12,https://bit.ly/dec-976-curitiba
+Publicidade,Decreto 976/24,"Triangulo de Visibilidade: Proibida instalação de totens a menos de 10m do cruzamento de alinhamentos prediais em esquinas.",Artigo 25,https://bit.ly/dec-976-curitiba
+Estruturas,NBR 6123,"Carga de Vento: Estruturas metálicas de painéis e coberturas devem ser calculadas para velocidade básica de 45m/s (Curitiba) e fator estatístico S2.",Item 5.1,https://bit.ly/375966-lei-curitiba
+Estruturas,NBR 8800,"Dimensionamento Aço: Perfis estruturais devem prever flecha máxima de L/350 e proteção galvânica contra corrosão em ambientes expostos.",Item 6.1,https://bit.ly/norma-aco
+Estruturas,Decreto 976/24,"Espaco de Manutencao: Cubos de LED exigem plataforma interna com 0.60m de largura livre e linha de vida para segurança do técnico.",Artigo 32,https://bit.ly/dec-976-curitiba
+Eletrica,NBR 5410,"Protecao de Circuitos: Obrigatorio uso de Dispositivo DR (30mA) e DPS Classe II em quadros que alimentam engenhos de publicidade externos.",Item 5.1,https://bit.ly/norma-eletrica-led
+Eletrica,NBR 5410,"Aterramento: Todas as massas metálicas da estrutura devem estar conectadas ao BEP para dissipação de descargas atmosféricas.",Item 6.3,https://bit.ly/norma-eletrica-led
+Trabalho,NR-18,"Canteiro de Obras: Bandejas de proteção (apara-lixo) obrigatórias em prédios com mais de 4 pavimentos; primária a 6m de altura.",Item 18.10,https://bit.ly/nr18-trabalho
+Trabalho,NR-35,"Trabalho em Altura: Obrigatoriedade de pontos de ancoragem certificados na cobertura para manutenção de fachadas e limpeza de vidros.",Item 35.5,https://bit.ly/nr35-altura
+Trabalho,NR-10,"Seguranca Eletrica: Quadros devem possuir sinalização de advertência e barreira física contra contatos acidentais em partes energizadas.",Item 10.4,https://bit.ly/norma-eletrica-led
+Protecao,NBR 14718,"Guarda-corpos: Altura mínima de 1.10m. Se houver degraus, a altura é medida a partir do focinho. Vidro deve ser laminado ou aramado.",Item 4.1,https://bit.ly/norma-guarda-corpo
