@@ -84,3 +84,14 @@ Postos,Lei 11.095/04,Distancias: Bombas de combustivel devem manter recuo de 6.0
 Ambiental,Lei 15.511/19,APP: Imoveis proximos a rios ou corregos devem respeitar faixa nao edificavel de 15m a 30m conforme largura do rio.,Artigo 105,https://bit.ly/plano-diretor-curitiba
 Ambiental,Decreto 1910/17,Residuos: Projetos de demolicao ou construcao acima de 600m2 exigem o Plano de Gerenciamento de Residuos da Construcao.,Artigo 5,https://bit.ly/dec-1910-curitiba
 Gas,NBR 13523,Central: Central de GLP deve estar a no minimo 6.00m de entradas de ar condicionado e 1.50m de ralos.,Item 5.1,https://bit.ly/norma-gas-glp
+Categoria,Artigo,Descricao,Fonte,Link
+Elevadores,NBR 16042,Acessibilidade: Cabine deve ter dimensao minima de 1.10m x 1.40m com espelho no painel oposto a porta.,Item 5.1,https://bit.ly/norma-elevadores
+Elevadores,NBR 16042,Controles: Botoeiras com Braille instaladas entre 0.80m e 1.20m de altura com sinalizacao sonora de pavimento.,Item 5.2,https://bit.ly/norma-elevadores
+Helipontos,RBAC 155 ANAC,Seguranca: Helipontos elevados exigem rede de protecao antiqueda perimetral e area de seguranca em torno da TLOF.,Capitulo D,https://bit.ly/anac-rbac155
+Helipontos,RBAC 155 ANAC,Incendio: Obrigatorio sistema de combate a incendio com canhoes monitores de espuma e drenagem de combustivel.,Capitulo D,https://bit.ly/anac-rbac155
+Telecom,Decreto 11.124/22,Antenas: Estacoes radio-base (ERB) devem respeitar limites de emissao eletromagnetica e recuo de 5m das divisas.,Artigo 12,https://bit.ly/lei-antenas-curitiba
+Telecom,NBR 14565,Cabeamento: Salas de equipamentos e racks de TI devem possuir climatizacao dedicada e sistema de aterramento independente.,Item 6.1,https://bit.ly/norma-ti
+Hidraulica,NBR 8160,Esgoto: Vedada a instalacao de caixas de gordura dentro de cozinhas. Devem estar em local ventilado e de facil acesso externo.,Item 5.2,https://bit.ly/norma-esgoto
+Hidraulica,NBR 5626,Agua Fria: Reservatorios de agua potavel devem ser estanques e permitir limpeza total. Vedado uso de amianto ou materiais toxicos.,Item 5.1,https://bit.ly/norma-agua-fria
+Eletrica,NBR 5419,SPDA: Edificios acima de 12m ou com grande afluencia de publico exigem sistema de para-raios com inspeção anual.,Parte 3,https://bit.ly/norma-spda
+Ar Condicionado,Lei 13.589/18,PMOC: Edificios com carga acima de 60.000 BTU devem ter plano de manutencao para garantir qualidade do ar e limpeza de filtros.,Artigo 1,https://bit.ly/lei-pmoc
