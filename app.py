@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="URBE - Analista Inteligente", page_icon="🏙️")
+st.set_page_config(page_title="URBE - Inteligência Urbana", page_icon="🏙️", layout="wide")
 
 @st.cache_data
 def carregar_dados():
@@ -11,69 +11,72 @@ def carregar_dados():
     except:
         return pd.DataFrame()
 
-# DICIONÁRIO DE SINÔNIMOS (Expanda conforme a necessidade da equipe)
-# Isso faz o app entender que 'casa' exige ver 'recuo', 'afastamento', etc.
-SINONIMOS = {
-    "casa": ["recuo", "afastamento", "altura", "taxa de ocupação", "zoneamento", "residencial"],
-    "residência": ["recuo", "afastamento", "altura", "zoneamento"],
-    "painel": ["led", "publicidade", "luminosidade", "fachada"],
-    "outdoor": ["led", "publicidade", "propaganda"],
-    "comércio": ["vagas", "acessibilidade", "calçada", "alvará"],
-    "prédio": ["coeficiente", "altura", "rebaixo", "incêndio"]
+# DICIONÁRIO ESTRUTURAL (O "Cérebro" do App)
+# Relaciona grandes áreas da arquitetura a termos técnicos que estarão no seu CSV
+MAPEAMENTO = {
+    "habitação": ["residencial", "casa", "sobrado", "apartamento", "unifamiliar", "multifamiliar", "loteamento"],
+    "comercial": ["loja", "comércio", "serviço", "alvará", "vagas", "estacionamento", "restaurante"],
+    "mídia": ["painel", "led", "outdoor", "publicidade", "letreiro", "fachada", "luminosidade", "propaganda"],
+    "estrutura": ["recuo", "afastamento", "altura", "pavimento", "saliência", "beiral", "muro", "divisa"],
+    "acessibilidade": ["rampa", "calçada", "passeio", "rebaixo", "piso tátil", "guarda-corpo", "sanitário"],
+    "sustentabilidade": ["permeabilidade", "árvore", "vegetação", "telhado verde", "drenagem"]
 }
 
 df = carregar_dados()
 
-st.title("🏙️ URBE")
-st.caption("Analista de Viabilidade Técnica - Curitiba")
+st.title("🏙️ URBE: Sistema Unificado de Leis")
+st.markdown("---")
 
 if df.empty:
-    st.warning("Configure seu arquivo leis.csv para começar.")
+    st.error("⚠️ Base de dados (leis.csv) não encontrada. Verifique seu GitHub.")
 else:
-    aba1, aba2 = st.tabs(["🔍 Consulta Direta", "🤖 Analista de Projeto"])
+    # Barra lateral com estatísticas para a equipe
+    st.sidebar.header("Status do Banco")
+    st.sidebar.write(f"📚 {len(df)} regras cadastradas")
+    
+    aba1, aba2 = st.tabs(["🔍 Consulta Rápida", "🧠 Analista de Viabilidade"])
 
     with aba1:
-        busca = st.text_input("Busca rápida por termo:")
-        if busca:
-            resultado = df[df.apply(lambda row: row.astype(str).str.contains(busca, case=False).any(), axis=1)]
-            for i, linha in resultado.iterrows():
-                with st.expander(f"📌 {linha.get('Artigo', 'S/A')}"):
-                    st.success(linha.get('Descricao', ''))
-                    st.caption(f"Fonte: {linha.get('Fonte', '')}")
+        termo = st.text_input("Busca global (Ex: 'Art. 30', 'LED', 'Calçadas')")
+        if termo:
+            resultado = df[df.apply(lambda row: row.astype(str).str.contains(termo, case=False).any(), axis=1)]
+            for i, row in resultado.iterrows():
+                with st.expander(f"📌 {row['Artigo']} - {row['Categoria']}"):
+                    st.warning(row['Descricao'])
+                    st.caption(f"📍 Fonte: {row['Fonte']}")
+                    if row['Link']: st.link_button("Documento Oficial", row['Link'])
 
     with aba2:
-        st.subheader("O que você está projetando?")
-        desc = st.text_area("Ex: Projeto de uma casa de dois pavimentos no bairro Batel.")
+        st.subheader("Diagnóstico do Projeto")
+        texto_projeto = st.text_area("Descreva os detalhes do projeto aqui:", 
+                                     placeholder="Ex: Instalação de painel digital em fachada de prédio comercial com recuo de 5m...",
+                                     height=150)
         
-        if st.button("Analisar Requisitos Legais"):
-            if desc:
-                texto_usuario = desc.lower()
-                termos_para_buscar = set()
+        if st.button("Executar Análise Completa"):
+            if texto_projeto:
+                projeto_lower = texto_projeto.lower()
+                # Cria uma lista de termos para buscar no CSV
+                termos_finais = set(projeto_lower.split())
                 
-                # 1. Adiciona termos que o usuário digitou
-                palavras_digitadas = texto_usuario.split()
-                for p in palavras_digitadas:
-                    termos_para_buscar.add(p)
+                # Adiciona termos técnicos baseados no mapeamento
+                for categoria, palavras in MAPEAMENTO.items():
+                    if any(p in projeto_lower for p in palavras) or categoria in projeto_lower:
+                        termos_finais.update(palavras)
+
+                st.write("### 🛠️ Parâmetros Técnicos Detectados:")
+                achou = False
                 
-                # 2. Adiciona sinônimos técnicos baseados no que o usuário digitou
-                for chave, lista_sinonimos in SINONIMOS.items():
-                    if chave in texto_usuario:
-                        for s in lista_sinonimos:
-                            termos_para_buscar.add(s)
+                # Busca profunda no CSV
+                for i, row in df.iterrows():
+                    alvo = (row['Categoria'] + " " + row['Descricao'] + " " + row['Artigo']).lower()
+                    if any(t in alvo for t in termos_finais if len(t) > 3):
+                        with st.container():
+                            st.markdown(f"#### {row['Categoria']} | {row['Artigo']}")
+                            st.info(row['Descricao'])
+                            st.caption(f"⚖️ **Referência:** {row['Fonte']}")
+                            if row['Link']: st.caption(f"[Link para conferência]({row['Link']})")
+                            st.markdown("---")
+                            achou = True
                 
-                st.write("### 📋 Itens obrigatórios para conferir:")
-                encontrado = False
-                
-                # 3. Varre o banco de dados buscando esses termos
-                for i, linha in df.iterrows():
-                    conteudo_lei = (linha.get('Categoria', '') + " " + linha.get('Descricao', '')).lower()
-                    
-                    if any(termo in conteudo_lei for termo in termos_para_buscar):
-                        with st.chat_message("assistant"):
-                            st.write(f"**{linha.get('Categoria')}** ({linha.get('Artigo')})")
-                            st.info(linha.get('Descricao'))
-                            if 'Fonte' in linha: st.caption(f"⚖️ {linha['Fonte']}")
-                        encontrado = True
-                
-                if not encontrado:
-                    st.warning("Não encontrei leis específicas. Tente detalhar mais (ex: mencionar se tem muro, calçada ou letreiro).")
+                if not achou:
+                    st.warning("Nenhuma norma específica encontrada. Tente descrever com mais termos técnicos.")
