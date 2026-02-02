@@ -1,13 +1,9 @@
 Categoria,Artigo,Descricao,Fonte,Link
-Painéis LED,Decreto 976/24,Brilho e Luminância: Os painéis devem reduzir a intensidade luminosa em 50% no período entre 22h e 06h.,Art. 30 Inciso I,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2024/97/976
-Painéis LED,Decreto 976/24,Área Máxima: Painéis em fachadas não podem ocupar mais de 20% da área total da face do edifício onde se instalam.,Art. 12 Parágrafo 2,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2024/97/976
-Painéis LED,Decreto 976/24,Distanciamento: Painéis de LED com área superior a 30m2 devem guardar distância mínima de 100m entre si no mesmo eixo.,Art. 22,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2024/97/976
-Publicidade,Decreto 976/24,Animação e Movimento: Proibida a veiculação de vídeos com movimentos bruscos ou flashes que distraiam motoristas; transições devem durar no mínimo 1s.,Art. 15,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2024/97/976
-Recuos,Lei 15.511/19,Recuo Frontal Geral: O recuo obrigatório é de 5.00m. Em vias estruturais esse valor pode variar conforme a guia amarela.,Art. 62 Tabela 4,https://bit.ly/lei-15511-curitiba
-Zoneamento,Lei 15.511/19,Taxa de Ocupação (TO): Em zonas residenciais (ZR) a taxa média é de 50%. Verificar potencial construtivo para áreas centrais.,Art. 55,https://bit.ly/lei-15511-curitiba
-Calçadas,Decreto 1066/06,Largura do Passeio: A faixa livre para circulação de pedestres deve ser de no mínimo 1.50m e sem obstáculos fixos.,Art. 10,https://www.curitiba.pr.gov.br/servicos/calcadas-padrao-execucao/623
-Acessibilidade,NBR 9050,Rampas: Inclinação máxima permitida para rampas de pedestres é de 8.33%. Acima disso é considerada escada.,Item 6.6,https://www.normas.com.br/visualizar/abnt-nbr-nm/25265/abnt-nbr9050
-Acessibilidade,Decreto 2397/23,Rebaixo de Guia: O rebaixo para veículos não pode ocupar a faixa livre do pedestre e deve ter largura máxima de 3m.,Art. 15 Inciso III,https://bit.ly/dec-2397-curitiba
-Arquitetura,Lei 11.095/04,Saliências e Sacadas: Elementos arquitetônicos podem avançar 1.20m sobre o recuo frontal se estiverem a mais de 3m de altura.,Art. 68,https://bit.ly/375966-lei-curitiba
-Arquitetura,Lei 11.095/04,Pé-direito Mínimo: Para áreas de permanência prolongada (salas/quartos) o pé-direito mínimo deve ser de 2.40m.,Art. 92,https://bit.ly/375966-lei-curitiba
-Publicidade,Decreto 976/24,Publicidade em Recuo: É proibida a instalação de engenhos de publicidade (totens/outdoors) dentro da faixa de recuo frontal obrigatório.,Art. 42,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2024/97/976
+Painéis LED,Decreto 976/2024,Luminância máxima deve ser reduzida em 50% entre 22h e 06h para controle de poluição visual.,Artigo 30 Inciso I,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2024/97/976
+Painéis LED,Decreto 976/2024,Área máxima de exposição não pode exceder 20% da face da fachada onde o engenho está instalado.,Artigo 12 Parágrafo 2,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2024/97/976
+Recuos,Lei 15.511/2019,É proibida a instalação de qualquer engenho de publicidade ou estrutura fixa dentro da faixa de recuo frontal (5m).,Artigo 42 e Artigo 62,https://bit.ly/lei-15511-curitiba
+Calçadas,Decreto 1066/2006,O passeio deve possuir faixa livre de no mínimo 1.50m. Mobiliário urbano ou vegetação não podem obstruir essa área.,Artigo 10 Parágrafo 1,https://www.curitiba.pr.gov.br/servicos/calcadas-padrao-execucao/623
+Zoneamento,Lei 15.511/2019,Taxa de Ocupação: Em zonas ZR2 e ZR3 a ocupação máxima do lote é de 50%. Coeficiente de aproveitamento padrão 1.0.,Artigo 55 Tabela Geral,https://bit.ly/lei-15511-curitiba
+Acessibilidade,Decreto 2397/2023,O rebaixo de guia para acesso de veículos deve ter largura máxima de 3.00m e não pode alterar o nível da faixa livre.,Artigo 15 Inciso III,https://bit.ly/dec-2397-curitiba
+Publicidade,Decreto 976/2024,Transição de imagens em painéis digitais deve ser estática (sem vídeos) com intervalo mínimo de 8 segundos por inserção.,Artigo 15 Parágrafo Único,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2024/97/976
+Muros,Decreto 1066/2006,Muros frontais acima de 0.90m de altura devem possuir no mínimo 50% de transparência visual (grades/vidros).,Artigo 18,https://www.curitiba.pr.gov.br/servicos/calcadas-padrao-execucao/623
