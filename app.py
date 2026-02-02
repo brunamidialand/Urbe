@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="URBE - Analista de Recortes", page_icon="🏙️", layout="wide")
+# Configuração com layout expandido para facilitar a leitura técnica
+st.set_page_config(page_title="URBE", page_icon="🏙️", layout="wide")
 
 @st.cache_data
 def carregar_dados():
     try:
-        # Carrega o CSV garantindo que links e descrições sejam textos
         df = pd.read_csv("leis.csv", dtype=str, keep_default_na=False)
         return df
     except:
@@ -14,53 +14,55 @@ def carregar_dados():
 
 df = carregar_dados()
 
-st.title("🏙️ URBE: Inteligência Legislativa")
-st.markdown("---")
+# Interface Profissional
+st.title("🏙️ URBE - Diagnóstico Técnico")
+st.markdown("### Análise de Conformidade: Arquitetura, Urbanismo e Publicidade")
+st.divider()
 
 if df.empty:
-    st.error("⚠️ Base de dados não encontrada. Certifique-se de que o arquivo 'leis.csv' está no seu GitHub.")
+    st.error("⚠️ Erro: Banco de dados (leis.csv) não localizado.")
 else:
-    tab1, tab2 = st.tabs(["🔍 Consulta por Termo", "🤖 Analista de Projetos"])
+    # Área de entrada de dados
+    st.subheader("Descrição do Projeto")
+    projeto = st.text_area(
+        "Insira os detalhes do projeto para identificação de normas:", 
+        placeholder="Ex: Instalação de painel de LED em fachada comercial no bairro Centro...",
+        height=150
+    )
 
-    with tab1:
-        busca = st.text_input("Digite um termo ou número de artigo:")
-        if busca:
-            # Filtro que busca em todas as colunas
-            mask = df.apply(lambda row: row.astype(str).str.contains(busca, case=False).any(), axis=1)
-            res = df[mask]
-            for _, row in res.iterrows():
-                with st.expander(f"📌 {row['Artigo']} | {row['Categoria']}"):
-                    st.info(f"**Trecho da Lei:** {row['Descricao']}")
-                    st.caption(f"⚖️ Fonte: {row['Fonte']}")
-                    if row['Link']: st.link_button("Conferir Lei Completa", row['Link'])
-
-    with tab2:
-        st.subheader("Análise Contextual de Projeto")
-        contexto = st.text_area("Descreva o projeto para extrairmos os trechos das leis:", 
-                                placeholder="Ex: Painel de LED em fachada comercial com avanço sobre o passeio...",
-                                height=150)
-        
-        if st.button("Analisar e Extrair Trechos"):
-            if contexto:
-                ctx_low = contexto.lower()
-                achou_algo = False
-                
-                st.write("### 📜 Recortes Legais Aplicáveis:")
-                
-                for _, row in df.iterrows():
-                    # O código cruza as palavras do seu projeto com as tags da Categoria e Descrição
-                    if any(palavra in ctx_low for palavra in row['Categoria'].lower().split()) or \
-                       any(palavra in ctx_low for palavra in row['Descricao'].lower().split()):
+    if st.button("🔍 ANALISAR NORMAS E ARTIGOS"):
+        if projeto:
+            p_low = projeto.lower()
+            encontrou = False
+            
+            st.markdown("---")
+            st.subheader("📋 Artigos e Dispositivos Legais Identificados")
+            
+            for _, row in df.iterrows():
+                # Busca inteligente cruzando Categoria e Descrição
+                if any(termo in p_low for termo in row['Categoria'].lower().split()) or \
+                   any(termo in p_low for termo in row['Descricao'].lower().split()):
+                    
+                    # Box visual para cada item da lei
+                    with st.container():
+                        c1, c2 = st.columns([1, 4])
                         
-                        with st.chat_message("assistant"):
-                            st.markdown(f"#### {row['Categoria']} - {row['Artigo']}")
-                            # Exibe o recorte técnico da lei
-                            st.success(f"**O que diz a norma:** {row['Descricao']}")
-                            st.markdown(f"*Referência específica: {row['Fonte']}*")
+                        with c1:
+                            st.info(f"**{row['Artigo']}**")
+                            st.caption(f"Tópico: {row['Categoria']}")
+                        
+                        with c2:
+                            # O Trecho exato da lei que você solicitou
+                            st.markdown(f"**Dispositivo:** {row['Descricao']}")
+                            st.caption(f"📍 Fonte específica: {row['Fonte']}")
+                            
                             if row['Link']:
-                                st.link_button(f"🔗 Abrir Fonte Oficial ({row['Artigo']})", row['Link'])
-                        achou_algo = True
-                        st.markdown("---")
-                
-                if not achou_algo:
-                    st.warning("Nenhum trecho específico foi encontrado para os termos digitados. Tente detalhar mais os elementos do projeto.")
+                                st.link_button("Acessar Texto Integral", row['Link'])
+                        
+                        st.divider()
+                        encontrou = True
+            
+            if not encontrou:
+                st.warning("Nenhum artigo correspondente foi encontrado para a descrição fornecida.")
+        else:
+            st.error("Por favor, descreva o projeto antes de analisar.")
