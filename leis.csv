@@ -106,3 +106,11 @@ Posturas,Lei 11.095/04,Vegetacao: Arvores em lotes privados nao podem avancar so
 Instalacoes,NBR 10844,Pluvial: Calhas e condutores dimensionados para periodo de retorno de 5 anos considerando as chuvas de Curitiba.,Item 5.1,https://bit.ly/norma-calhas
 Estruturas,NBR 9062,Pre-moldados: Elementos devem ter selo de rastreabilidade e laudo de compressao Fck arquivado na obra.,Item 6.1,https://bit.ly/norma-premoldado
 Telecom,NBR 16264,Automacao: Dutos de automacao devem ser secos e separados fisicamente dos cabos de energia eletrica.,Item 4.1,https://bit.ly/norma-automacao
+Categoria,Artigo,Descricao,Fonte,Link
+Urbanismo,Lei 15.511/19,"Recuo Frontal: Minimo de 5.00m em vias locais e 10.00m em estruturais. Vedada a ocupacao com qualquer estrutura permanente acima de 0.50m do piso, exceto muretas de divisa.",Plano Diretor,https://bit.ly/lei-15511-curitiba
+Urbanismo,Lei 15.511/19,"Taxa de Permeabilidade: Minimo de 25% da area do lote. Deve ser solo livre ou piso drenante com certificado de eficiencia. Proibido computar floreiras sobre laje de subsolo.",Artigo 58,https://bit.ly/lei-15511-curitiba
+Urbanismo,Lei 11.095/04,"Pe-Direito: Minimo de 2.40m em residencias e 3.00m em comercios. Em garagens e subsolos a altura livre sob vigas e tubulacoes de incendio deve ser de no minimo 2.20m.",Artigo 80,https://bit.ly/375966-lei-curitiba
+Urbanismo,Lei 11.095/04,"Marquises e Balcoes: Projecao maxima de 2.00m sobre o passeio. Altura livre minima de 3.00m em relacao a calcada. Obrigatorio sistema de calhas e condutores internos embutidos.",Artigo 72,https://bit.ly/375966-lei-curitiba
+Urbanismo,Lei 11.095/04,"Areas de Recreacao: Edificios residenciais coletivos exigem area comum de lazer de 6m2 por unidade, sendo no minimo 50% em espaco aberto e insolarado.",Artigo 120,https://bit.ly/375966-lei-curitiba
+Garagens,Lei 11.095/04,"Rampas de Veiculos: Inclinacao maxima de 20%. Exigencia de patamar de acomodacao plano com 5.00m de extensao entre o alinhamento predial e o inicio do declive.",Artigo 116,https://bit.ly/375966-lei-curitiba
+Garagens,Lei 11.095/04,"Vagas de Estacionamento: Largura minima de 2.40m para carros pequenos e 2.50m para utilitarios. Corredor de manobra de 5.50m para vagas dispostas em angulo de 90 graus.",Artigo 115,https://bit.ly/375966-lei-curitiba
