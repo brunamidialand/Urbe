@@ -62,3 +62,10 @@ Meio Ambiente,Lei 15.511/19,Areas de Preservacao: Lotes proximos a rios devem re
 Arquitetura,Lei 11.095/04,Muros e Cercas: Muros frontais em zonas residenciais podem ter altura maxima de 2.00m com permeabilidade visual.,Artigo 125,https://bit.ly/375966-lei-curitiba
 Sustentabilidade,Lei 14.771/15,Reuso de Agua: Edificacoes com grande cobertura devem prever sistema de captacao de aguas pluviais para fins nao potaveis.,Artigo 108 Plano Diretor,https://bit.ly/plano-diretor-curitiba
 Instalacoes,NBR 5410,Fiacao e Quadros: Paineis eletricos devem ser instalados em locais secos com acesso restrito e sinalizacao de perigo.,Item 5.1,https://bit.ly/norma-eletrica-led
+Categoria,Artigo,Descricao,Fonte,Link
+Estruturas,Decreto 976/24,"Seguranca Estrutural de Paineis: Todo engenho especial com area superior a 30m2 exige calculo de carga de vento e verificacao de fadiga dos materiais suportes.",Artigo 52,https://bit.ly/dec-976-curitiba
+Manutencao,Decreto 976/24,"Acesso Tecnico: Estruturas tipo cubo ou caixa devem possuir porta de inspeção interna com dimensoes minimas de 0.60x1.20m para manutencao de fontes e cabos.",Artigo 30,https://bit.ly/dec-976-curitiba
+Eletrica,Decreto 976/24,"Compartimentacao de Paineis: O interior de cubos de LED deve ter sistema de ventilacao forcada (exaustores) para evitar superaquecimento e risco de incendio.",Artigo 31,https://bit.ly/dec-976-curitiba
+Seguranca,Lei 11.095/04,"Circulacao em Manutencao: Corredores internos de instalacoes tecnicas nao podem ser usados como deposito e devem ter iluminacao blindada contra impactos.",Artigo 95,https://bit.ly/375966-lei-curitiba
+Vizinhanca,Lei 10.625/02,"Ruido de Maquinas: Os exaustores e sistemas de resfriamento de paineis de LED nao podem ultrapassar 45dB no periodo noturno em zonas residenciais.",Artigo 4,https://bit.ly/lei-10625-curitiba
+Arquitetura,Lei 15.511/19,"Projecao sobre Recuo: Cubos e elementos decorativos so podem avancar sobre o recuo frontal se forem removiveis ou tiverem carater publicitario aprovado.",Artigo 62,https://bit.ly/lei-15511-curitiba
