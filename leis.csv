@@ -1,11 +1,32 @@
-Categoria,Artigo,Descricao,Fonte,Link Estavel (Busca)
-Urbanismo,Lei 15.511/19 Art 18,Coeficiente de Aproveitamento (CA): Basico 1.0 para todas as zonas (exceto ZR1). CA Maximo (ate 6.0 em Eixos) exige Outorga Onerosa ou CEPAC. Subsolo nao computa no CA se a laje superior nao aflorar mais de 1.50m do solo (perfil natural ou meio-fio).,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/lei-ordinaria/2019/15511/lei-ordinaria-n-15511-2019
-Urbanismo,Lei 15.511/19 Art 54,Recuo Lateral e Fundos: Isento ate 6.50m (2 pavs). Acima de 6.50m aplicar formula R = (H - 6.5) / 6 + 2.50m. R e o recuo e H e a altura total. Recuo lateral minimo de 2.50m apos a isencao. Janelas exigem sempre min 1.50m da divisa.,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/lei-ordinaria/2019/15511/lei-ordinaria-n-15511-2019
-Urbanismo,Decreto 1582/20 Art 3,Regra do Atico: Area maxima de 1/3 (33.33%) da area do pav. inferior. Pe-direito max 2.40m. Se exceder area ou altura; a metragem total do atico e computada integralmente no CA. Nao conta como pavimento para fins de recuo lateral.,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2020/1582/decreto-n-1582-2020
-Urbanismo,Lei 15.511/19 Art 60,Areas Nao Computaveis: Sacadas abertas ate 10m2; garagens subsolo; areas tecnicas (reservatorios/maquinas/gas); areas de lazer comum ate 10% da area total; circulacoes coletivas em Habitacao de Interesse Social (HIS).,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/lei-ordinaria/2019/15511/lei-ordinaria-n-15511-2019
-Urbanismo,Lei 15.511/19 Art 58,Taxa de Permeabilidade: Minimo 25% do lote em solo vivo. Piso drenante (concregrama) vale 50% de sua area aplicada. Vedada laje sob a area permeavel. Obrigatorio caixa de retencao para lotes com area impermeabilizada > 500m2.,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/lei-ordinaria/2019/15511/lei-ordinaria-n-15511-2019
-Urbanismo,Decreto 1212/12 Art 4,Retencao de Cheias (Piscininha): Obrigatorio p/ Ai > 500m2. Volume V = Ai * 0.015 * T. T e o tempo de retorno. Saida para rede publica deve ter limitador de vazao (orificio de restricao) para evitar sobrecarga na galeria pluvial.,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2012/1212/decreto-n-1212-2012
-Urbanismo,Lei 11.095 Art 73,Saliencias e Balancos: Avanco max 1.20m sobre os recuos laterais e fundos. Devem ser abertos. A soma das extensoes das saliencias e limitada a 1/4 (25%) da extensao total da fachada lateral. Acima de 1.20m conta como area computavel.,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/lei-ordinaria/2004/11095/lei-ordinaria-n-11095-2004
-Urbanismo,Decreto 175/06 Art 5,Visibilidade de Garagem: Exige chanfro de 2.00m x 2.00m nos muros de divisa no ponto de encontro com o alinhamento predial para garantir angulo de visao. Sinalizador sonoro e visual obrigatorio em acessos de imoveis nao-residenciais.,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2006/175/decreto-n-175-2006
-Urbanismo,Lei 15.511/19 Art 52,Recuo Frontal: Minimo 5.00m (vias locais) e 10.00m (vias estruturais). Esquinas exigem recuo frontal em ambas as faces. Proibido estacionamento no recuo que dependa de manobra na calcada. Permitida guarita ate 6m2 no recuo.,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/lei-ordinaria/2019/15511/lei-ordinaria-n-15511-2019
-Urbanismo,Decreto 1140/14,UIP (Patrimonio): Unidades de Interesse de Preservacao. Proibida demolicao. Reformas exigem projeto de restauro e aval da CAPC. Possibilidade de Transferencia do Direito de Construir (venda do Solo Criado para terceiros).,Leis Municipais,https://leismunicipais.com.br/a/pr/c/curitiba/decreto/2014/1140/decreto-n-1140-2014
+nome,numero,ano,tipo,url,relevancia,assunto
+"Regulamento Edificações","2397","2023","Decreto","https://leismunicipais.com.br/curitiba-pr/decreto/2023/2397","Alta","Construções/reformas/ocupação"
+"Lei Zoneamento Uso Solo","15511","2019","Lei Complementar","https://leismunicipais.com.br/curitiba-pr/lei-complementar/2019/15511","Alta","ZR1/ZR2/ZR3/ZR4/COEFA"
+"Código Posturas","11095","2004","Lei","https://leismunicipais.com.br/curitiba-pr/lei/2004/11095","Alta","Licenças/fiscalização/obras"
+"Publicidade Exterior OOH","10906","2003","Lei","https://leismunicipais.com.br/curitiba-pr/lei/2003/10906","Alta","Painéis/LED/placas/fachadas"
+"Parcelamento Solo","14771","2015","Lei","https://leismunicipais.com.br/curitiba-pr/lei/2015/14771","Alta","Loteamentos/desmembramento"
+"COHAB Parâmetros","1449","2022","Decreto","https://leismunicipais.com.br/curitiba-pr/decreto/2022/1449","Alta","Habitação popular"
+"Bicicletas Motocicletas","92","2014","Decreto","https://urbanismo.curitiba.pr.gov.br","Média","Vagas especiais"
+"Calçadas FUNRECAL","11596","2005","Lei","https://leismunicipais.com.br/curitiba-pr/lei/2005/11596","Alta","Calçadas/acessibilidade"
+"Subdivisão Lotes","Res. CMU 03","2020","Resolução","https://urbanismo.curitiba.pr.gov.br","Alta","+3 casas/sublotes"
+"Arruamentos Loteamentos","2942","1966","Lei","https://urbanismo.curitiba.pr.gov.br","Alta","Ruas/normas antigas"
+"Regularização Solo","9460","1998","Lei","https://urbanismo.curitiba.pr.gov.br","Alta","Parcelamentos irregulares"
+"Lei Complementar 12484","12484","2007","Lei","https://urbanismo.curitiba.pr.gov.br","Média","Regularização"
+"Lei Complementar 13733","13733","2011","Lei","https://urbanismo.curitiba.pr.gov.br","Média","Regularização"
+"Lei Complementar 14981","14981","2016","Lei","https://urbanismo.curitiba.pr.gov.br","Média","Regularização"
+"Regulamento Glebas","1938","2023","Decreto","https://leismunicipais.com.br/curitiba-pr/decreto/2023/1938","Alta","Lei Federal 6766"
+"Zoneamento Antigo","9800","2000","Lei","https://urbanismo.curitiba.pr.gov.br","Média","Zoneamento revogado"
+"Lei Orgânica Curitiba","-","1990","Lei Orgânica","https://leismunicipais.com.br/curitiba-pr/lei-organica","Alta","Base legal"
+"Plano Diretor","14472","2014","Lei","https://urbanismo.curitiba.pr.gov.br","Alta","Planejamento urbano"
+"L Licenciamento Ambiental","13911","2011","Lei","https://leismunicipais.com.br/curitiba-pr/lei/2011/13911","Média","Impacto ambiental"
+"Patrimônio Cultural","14794","2016","Lei","https://urbanismo.curitiba.pr.gov.br","Alta","Tombamentos/reformas"
+"Arte Urbana Grafite","16237","2023","Lei","https://urbanismo.curitiba.pr.gov.br","Média","Paredes/grafite"
+"Vilas de Ofícios","2027","2021","Decreto","https://urbanismo.curitiba.pr.gov.br","Média","Zonas especiais"
+"Prêmios Construtivos","16448","2024","Lei","https://urbanismo.curitiba.pr.gov.br","Alta","Incentivos outorga"
+"Licenciamento Eletrônico","915","2020","Decreto","https://urbanismo.curitiba.pr.gov.br","Média","Processo digital"
+"Publicidade Alteração1","16485","2025","Lei","https://urbanismo.curitiba.pr.gov.br","Alta","OOH atualizada"
+"Publicidade Alteração2","16093","2022","Lei","https://urbanismo.curitiba.pr.gov.br","Alta","OOH fachadas"
+"Zoneamento Mapas","-","2019","Mapa","https://urbanismo.curitiba.pr.gov.br","Alta","Zonas viárias"
+"NBR Acessibilidade","9050","2015","NBR","https://caupr.gov.br/normas-abnt","Alta","Rampas/portas"
+"NBR Desempenho","15575","2022","NBR","https://caupr.gov.br/normas-abnt","Alta","Qualidade construção"
+"Lei Fachadas Antiga","6988","1987","Lei","https://urbanismo.curitiba.pr.gov.br","Média","Fachadas antigas"
+"Lei Uso Solo Antiga","6952","1986","Lei","https://urbanismo.curitiba.pr.gov.br","Média","Zoneamento antigo"
