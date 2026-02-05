@@ -166,9 +166,10 @@ Eletrica,NBR 5410,DPS: Obrigatorio uso de Dispositivos de Protecao contra Surtos
 Hidraulica,NBR 8160,Esgoto: Caixas de gordura devem ser instaladas fora da projecao da edificacao em local acessivel para limpeza. Ventilacao da coluna de esgoto deve subir ate o telhado para evitar mau cheiro.,Item 5.2,https://bit.ly/norma-esgoto
 Gas,NBR 13523,Central GLP: Botijoes devem ficar em abrigo ventilado ao nivel do solo. Distancia minima de 1.50m de ralos e 6.00m de entradas de ar condicionado para evitar acumulo de gas em caso de vazamento.,Item 5.1,https://bit.ly/norma-gas-glp
 Categoria,Artigo,Descricao,Fonte,Link
-Saude,RDC 50 ANVISA,Hospitais: Corredores para circulacao de macas devem ter largura minima de 2.00m. Paredes e pisos devem ser de material liso resistente a lavagem e sem frestas ou porosidade.,Item 3.2,https://bit.ly/anvisa-rdc50
-Saude,RDC 50 ANVISA,Fluxo Sujo/Limpo: Obrigatoria a separacao fisica entre o fluxo de material esterilizado e o expurgo para evitar contaminacao cruzada. Portas de acesso devem ter visores.,Item 3.1,https://bit.ly/anvisa-rdc50
-Saude,RDC 50 ANVISA,Radiologia: Salas de Raio-X Tomografia e Mamografia exigem projeto de blindagem (chumbo ou barita) nas paredes e visores plumbiferos para protecao do operador.,Item 3.2,https://bit.ly/anvisa-rdc50
-Saude,Lei 9.000/96,Clinicas: Consultorios devem possuir lavatorio exclusivo para higiene de maos com acionamento por cotovelo ou pedal para evitar contato manual com a torneira.,Codigo Saude,https://bit.ly/lei-9000-curitiba
-Educacao,Lei 14.771/15,Escolas: Area de recreacao descoberta deve respeitar o minimo de 5.00m2 por aluno. Escadas devem ter protecao lateral completa para evitar queda de criancas.,Artigo 90,https://bit.ly/plano-diretor-curitiba
-Postos,CONAMA 273,Tanques: Devem ser de parede
+Saude,RDC 50 ANVISA,Hospitais: Corredores para macas com largura minima de 2.00m. Paredes e pisos de material liso resistente a lavagem sem porosidade.,Item 3.2,https://bit.ly/anvisa-rdc50
+Saude,RDC 50 ANVISA,Fluxo: Separacao fisica obrigatoria entre material esterilizado e expurgo para evitar contaminacao cruzada. Portas com visores.,Item 3.1,https://bit.ly/anvisa-rdc50
+Saude,RDC 50 ANVISA,Radiologia: Salas de Raio X e Tomografia exigem projeto de blindagem com chumbo ou barita nas paredes para protecao do operador.,Item 3.2,https://bit.ly/anvisa-rdc50
+Saude,Lei 9.000/96,Clinicas: Consultorios devem ter lavatorio exclusivo para maos com acionamento por cotovelo ou pedal para evitar contato manual.,Codigo Saude,https://bit.ly/lei-9000-curitiba
+Educacao,Lei 14.771/15,Escolas: Area de recreacao descoberta com minimo de 5.00m2 por aluno. Escadas com protecao lateral completa contra quedas.,Artigo 90,https://bit.ly/plano-diretor-curitiba
+Postos,CONAMA 273,Tanques: Parede dupla jaquetada com monitoramento eletronico de vazamento. Obrigatoria bacia de contencao em filtros de combustivel.,Artigo 5,https://bit.ly/conama-273
+Postos,CONAMA 273,Drenagem: Area de abastecimento concretada com canaletas ligadas a caixa separadora de agua e oleo SAO antes do descarte.,Artigo 5,https://bit.ly/conama-273
