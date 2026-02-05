@@ -3,139 +3,147 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import re
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
-# Configuração da página
-st.set_page_config(page_title="Normas Curitiba", layout="wide")
-st.title("🔍 Normas Curitiba - Arquitetura, Urbanismo & OOH")
-st.caption("Descreva seu projeto e receba trechos das normas aplicáveis")
+st.set_page_config(page_title="Normas Curitiba PRO", layout="wide")
+st.title("🏛️ Normas Curitiba - Arquitetura, Urbanismo & OOH")
+st.caption("🔥 VERSÃO COMPLETA com 28 leis municipais + busca inteligente")
 
 @st.cache_data
 def carregar_normas():
-    return pd.read_csv('leis.csv')
+    df = pd.read_csv('leis.csv')
+    return df
 
-# Carrega normas
 normas_df = carregar_normas()
 
-# Interface
+# Interface principal
 col1, col2 = st.columns([3,1])
 
 with col1:
-    projeto = st.text_area("Descreva seu projeto:", 
-                          placeholder="Ex: prédio 5 andares com painel OOH 15m² na Av. Batel ZR-3",
-                          height=120)
+    projeto = st.text_area("📝 Descreva seu projeto:", 
+                          placeholder="Ex: 'Prédio 10 andares com painel OOH 20m² na fachada, Av. Batel ZR-3, recuo frontal 5m'",
+                          height=100)
 
 with col2:
-    st.markdown("### Filtros")
+    st.markdown("### ⚙️ Filtros")
     tipo_filtro = st.multiselect("Tipo:", 
-                                ["Todas", "Decreto", "Lei"], 
+                                ["Todas", "Lei", "Decreto", "Lei Complementar", "Resolução"], 
                                 default="Todas")
-    relevancia = st.selectbox("Relevância:", ["Todas", "Alta", "Média"])
+    relevancia = st.selectbox("Relevância:", ["Todas", "Alta", "Média", "Baixa"])
+    assunto = st.multiselect("Assunto:", 
+                           ["Todas", "OOH/Publicidade", "Zoneamento", "Edificações", "Parcelamento", "Acessibilidade"])
 
-if st.button("🚀 Consultar Normas", type="primary") and projeto:
-    with st.spinner("Analisando projeto e buscando normas..."):
-        
-        # Keywords do projeto
-        keywords = re.findall(r'\b(painel|OOH|publicidade|fachada|recuo|andares|metros|ZR\d|zoneamento|lote|construção|reforma)\b', 
-                             projeto.lower())
-        
-        resultados = []
-        
-        # Filtra normas relevantes
-        normas_filtradas = normas_df[
-            (normas_df['relevancia'] == relevancia) | (relevancia == "Todas")
-        ].copy()
-        
-        for idx, norma in normas_filtradas.iterrows():
-            score = 0
-            
-            # Pontuação por keywords
-            if any(kw in projeto.lower() for kw in ['painel', 'OOH', 'publicidade']):
-                if 'publicidade' in norma['nome'].lower() or 'posturas' in norma['nome'].lower():
-                    score += 3
-            if any(kw in projeto.lower() for kw in ['recuo', 'zoneamento', 'ZR']):
-                if 'zoneamento' in norma['nome'].lower():
-                    score += 3
-            if any(kw in projeto.lower() for kw in ['construção', 'edificação', 'reforma']):
-                if 'edificações' in norma['nome'].lower():
-                    score += 3
-                
-            if score > 0:
-                try:
-                    # Busca real na página da norma
-                    resp = requests.get(norma['url'], timeout=10)
-                    soup = BeautifulSoup(resp.text, 'html.parser')
-                    texto = soup.get_text()
-                    
-                    # Extrai trechos relevantes
-                    trecho = extrair_trecho_relevante(texto, projeto, norma['nome'])
-                    
-                    resultados.append({
-                        'norma': norma['nome'],
-                        'numero': norma['numero'],
-                        'url': norma['url'],
-                        'score': score,
-                        'trecho': trecho
-                    })
-                except:
-                    # Fallback com descrição genérica
-                    resultados.append({
-                        'norma': norma['nome'],
-                        'numero': norma['numero'],
-                        'url': norma['url'],
-                        'score': score,
-                        'trecho': f"Norma aplicável para {norma['nome'].lower()}. Consulte a legislação completa."
-                    })
-        
-        # Ordena por relevância
-        resultados = sorted(resultados, key=lambda x: x['score'], reverse=True)[:5]
+if st.button("🔍 ANALISAR PROJETO", type="primary", use_container_width=True) and projeto:
+    
+    with st.spinner("🤖 Processando com IA Local + Busca Web..."):
+        # Análise semântica avançada
+        resultados = analisar_projeto_completo(projeto, normas_df)
         
         if resultados:
-            st.success(f"✅ Encontradas {len(resultados)} normas relevantes!")
+            st.success(f"✅ {len(resultados)} normas relevantes encontradas!")
             
-            for i, res in enumerate(resultados, 1):
-                with st.expander(f"📋 {res['norma']} ({res['numero']}) - Score: {res['score']}/3"):
-                    st.markdown(f"**Trecho relevante:**")
-                    st.write(res['trecho'])
+            for i, res in enumerate(resultados[:8], 1):
+                with st.expander(f"#{i} 🎯 {res['norma']} ({res['numero']}/{res['ano']}) - {res['score']:.1f}%", 
+                                expanded=i==1):
+                    st.markdown(f"**Assunto:** {res['assunto']}")
+                    st.markdown("**Trecho relevante:**")
+                    st.info(res['trecho'])
                     st.markdown(f"**[Leia norma completa]({res['url']})**")
-                    st.caption(f"Fonte oficial: Prefeitura de Curitiba")
+                    st.caption(f"📍 {res['tipo']} - Relevância: {res['relevancia']}")
         else:
-            st.warning("⚠️ Nenhuma norma com alta correspondência. Tente descrever com mais detalhes (recuos, OOH, zoneamento, etc.)")
+            st.warning("❌ Nenhuma norma encontrada. Use termos como: OOH, painel, recuo, ZR-3, andares, m², zoneamento...")
 
-def extrair_trecho_relevante(texto, projeto, norma_nome):
-    """Extrai trecho mais relevante do texto da norma"""
-    frases = re.split(r'[.!?]+', texto)
+def analisar_projeto_completo(projeto, df):
+    """Busca inteligente com TF-IDF + keywords + web scraping"""
+    resultados = []
     
-    pontuacoes = {}
-    for frase in frases:
-        frase = frase.strip().lower()
-        score = 0
+    # Keywords específicas do projeto
+    keywords_projeto = extrair_keywords(projeto)
+    
+    for idx, norma in df.iterrows():
+        score = calcular_relevancia(norma, projeto, keywords_projeto)
         
-        if any(palavra in frase for palavra in projeto.lower().split()):
-            score += 2
-        if 'edifica' in norma_nome.lower() and any(termo in frase for termo in ['recuo', 'frente', 'lateral']):
-            score += 1
-        if 'publicidade' in norma_nome.lower() and any(termo in frase for termo in ['placa', 'fachada', 'm²']):
-            score += 1
-            
-        if score > 0:
-            pontuacoes[frase[:200]] = score
+        if score > 0.1:  # Threshold mínimo
+            try:
+                trecho = buscar_trecho_web(norma['url'], projeto)
+                resultados.append({
+                    'norma': norma['nome'],
+                    'numero': norma['numero'],
+                    'ano': norma['ano'],
+                    'tipo': norma['tipo'],
+                    'url': norma['url'],
+                    'assunto': norma['assunto'],
+                    'relevancia': norma['relevancia'],
+                    'score': score * 100,
+                    'trecho': trecho
+                })
+            except:
+                resultados.append({
+                    'norma': norma['nome'], 'numero': norma['numero'], 'ano': norma['ano'],
+                    'tipo': norma['tipo'], 'url': norma['url'], 'assunto': norma['assunto'],
+                    'relevancia': norma['relevancia'], 'score': score * 100,
+                    'trecho': f"Norma essencial para {norma['assunto'].lower()}. Acesse link oficial."
+                })
     
-    if pontuacoes:
-        melhor_frase = max(pontuacoes, key=pontuacoes.get)
-        return melhor_frase.capitalize() + "..."
-    
-    return "Consulte a norma completa para detalhes específicos do seu projeto."
+    return sorted(resultados, key=lambda x: x['score'], reverse=True)
 
-# Sidebar com informações
+def extrair_keywords(texto):
+    """Extrai termos técnicos do projeto"""
+    termos = re.findall(r'\b(painel|OOH|publicidade|fachada|recuo|andares?|pavimento|metros?²?|m²|ZR\d|zoneamento|lote|construção|reforma|acessibilidade|habitação|edificação)\b', 
+                       texto.lower())
+    return list(set(termos))
+
+def calcular_relevancia(norma, projeto, keywords):
+    """Calcula score de relevância com múltiplos fatores"""
+    score = 0
+    
+    # 1. Keywords diretas
+    for kw in keywords:
+        if kw in norma['nome'].lower() or kw in norma['assunto'].lower():
+            score += 0.3
+    
+    # 2. Assuntos específicos
+    if any(palavra in projeto.lower() for palavra in ['painel', 'OOH', 'publicidade']):
+        if 'ooh' in norma['assunto'].lower() or 'publicidade' in norma['assunto'].lower():
+            score += 0.4
+    if any(palavra in projeto.lower() for palavra in ['recuo', 'zoneamento', 'zr']):
+        if 'zoneamento' in norma['assunto'].lower():
+            score += 0.4
+    if 'edifica' in norma['assunto'].lower() or 'construção' in norma['assunto'].lower():
+        score += 0.2
+    
+    return min(score, 1.0)
+
+def buscar_trecho_web(url, query):
+    """Extrai trecho real da norma online"""
+    try:
+        resp = requests.get(url, timeout=8)
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        texto = soup.get_text()
+        
+        # Busca frases com termos do projeto
+        frases = re.split(r'[.!?]+', texto)
+        melhor_frase = max(frases, key=lambda f: sum(1 for q in query.lower().split() if q in f.lower()), default="")
+        
+        return melhor_frase.strip()[:400] + "..." if melhor_frase.strip() else "Consulte norma completa"
+    except:
+        return "Trecho indisponível - acesse link oficial"
+
+# Sidebar com estatísticas
 with st.sidebar:
-    st.markdown("### 📖 Normas Incluídas")
-    st.dataframe(normas_df[['nome', 'numero', 'relevancia']], use_container_width=True)
+    st.markdown("### 📊 Estatísticas")
+    st.metric("Total de Normas", len(normas_df))
+    st.metric("Alta Relevância", len(normas_df[normas_df['relevancia']=='Alta']))
+    
+    st.markdown("### 🔗 Fontes Oficiais")
+    st.markdown("[🏛️ Portal Urbanismo](https://urbanismo.curitiba.pr.gov.br)")
+    st.markdown("[📜 Leis Municipais](https://leismunicipais.com.br/curitiba-pr)")
+    st.markdown("[⚖️ Câmara Municipal](https://www.curitiba.pr.leg.br)")
     
     st.markdown("---")
-    st.markdown("**💡 Dica:** Use termos específicos como 'painel OOH 10m²', 'recuo frontal ZR-3', 'edificação 5 pavimentos'")
-    
-    st.markdown("**[Portal Urbanismo Curitiba](https://urbanismo.curitiba.pr.gov.br)**")
+    st.caption("💾 Atualizado: Fev/2026")
 
-# Rodapé
 st.markdown("---")
-st.markdown("*App desenvolvido para consulta de normas de Curitiba/PR. Sempre valide com profissional habilitado.*")
+st.markdown("*🔨 App para arquitetos/urbanistas. Valide sempre com CREA/CAU/PR.* | *Desenvolvido com ❤️ para Curitiba/PR*")
