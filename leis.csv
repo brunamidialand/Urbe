@@ -173,3 +173,10 @@ Saude,Lei 9.000/96,Clinicas: Consultorios devem ter lavatorio exclusivo para mao
 Educacao,Lei 14.771/15,Escolas: Area de recreacao descoberta com minimo de 5.00m2 por aluno. Escadas com protecao lateral completa contra quedas.,Artigo 90,https://bit.ly/plano-diretor-curitiba
 Postos,CONAMA 273,Tanques: Parede dupla jaquetada com monitoramento eletronico de vazamento. Obrigatoria bacia de contencao em filtros de combustivel.,Artigo 5,https://bit.ly/conama-273
 Postos,CONAMA 273,Drenagem: Area de abastecimento concretada com canaletas ligadas a caixa separadora de agua e oleo SAO antes do descarte.,Artigo 5,https://bit.ly/conama-273
+Categoria,Artigo,Descricao,Fonte,Link
+Trabalho,NR-35,Trabalho em Altura: Edificios devem possuir pontos de ancoragem certificados embutidos na estrutura da cobertura para fixacao de linhas de vida e cadeiras suspensas.,Item 35.5,https://bit.ly/nr35-altura
+Trabalho,NR-18,Seguranca na Obra: Obrigatorio uso de plataformas de protecao (bandejas) em edificios com mais de 4 pavimentos. Periferias devem ter guarda-corpo de 1.20m de altura.,Item 18.10,https://bit.ly/nr18-trabalho
+Desempenho,NBR 15575,Acustica: Paredes entre apartamentos vizinhos devem ter isolamento minimo de 45dB. Pisos devem ter manta acustica para reduzir ruidos de impacto para o andar de baixo.,Parte 4,https://bit.ly/norma-desempenho-edificios
+Desempenho,NBR 15575,Termica: Coberturas devem possuir isolamento (la de rocha ou EPS) para garantir que a temperatura interna nao ultrapasse os limites de conforto no verao de Curitiba.,Parte 5,https://bit.ly/norma-desempenho-edificios
+Estruturas,NBR 14718,Guarda-corpos: Devem suportar carga horizontal de 0.8kN/m em areas privadas e 1.5kN/m em areas publicas. Altura minima de 1.10m sem elementos que permitam escalada.,Item 4.1,https://bit.ly/norma-guarda-corpo
+Residuos,Decreto 1910/17,Gerenciamento: Projetos acima de 600m2 devem apresentar o PGRCC especificando a empresa de transporte e o aterro de destino de cada classe de residuo da obra.,Artigo 5,https://bit.ly/dec-1910-curitiba
